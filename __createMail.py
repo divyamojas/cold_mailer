@@ -33,6 +33,8 @@ def create_mail(
 
     subject = f"{job_title.capitalize()} | Fresh out of college for {company_name.capitalize()}"
 
+    print(job_title.capitalize())
+    input()
     email_body = create_email_body(
         recruiter_name,
         job_title,

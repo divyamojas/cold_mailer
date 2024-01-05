@@ -40,7 +40,7 @@ def create_email_body(
     # Generate email text
     email_text = f"""<html>
         <body>
-          <p>Dear {recruiter_name},</p>
+          <p>Dear {recruiter_name.capitalize()},</p>
           <p>I hope you're doing great!</p>
           <p>I came across the job opening of {job_title} at {company_name.capitalize()} and this role really excites me!</p>
           <p>I am currently in my final year at {college_name}, I'm set to graduate soon and would love to bring my {key_skill_or_quality.lower()} to your awesome team. What excites me most about {company_name.capitalize()} is {specific_aspect_of_company}.</p>
@@ -49,7 +49,7 @@ def create_email_body(
           <p>Sincerely,</p>
           <p>{user_full_name}<br/>
           {contact_number}<br/>
-          {email_address}</p>
+          {college_name}</p>
         </body>
         </html>
         """
